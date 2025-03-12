@@ -52,7 +52,7 @@
 2. **Deploy the service**  
    Run the following command in the same directory as your `docker-compose.yml`:  
    ```bash
-   docker-compose up -d
+   docker compose up -d
    ```
 
 3. **Reverse Proxy with Caddy**  
