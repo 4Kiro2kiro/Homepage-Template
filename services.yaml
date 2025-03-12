@@ -1,0 +1,84 @@
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/service
+- Media:
+    - Vaultwarden:
+        icon: vaultwarden.png
+        ping: https://vaultwarden.local/
+        href: https://vaultwarden.local/
+        description: "Vault for Password"
+        container: vaultwarden
+        showStats: true
+        siteMonitor: https://vaultwarden.local/
+
+    - Photoprism:
+         icon: photoprism.png
+         href: http://photoprism.local:2342
+         ping: https://photoprism.local/
+         description: Gestionnaire de photos
+         widget:
+           type: photoprism
+           url: http://photoprism.local:2342
+           username: "admin"       # À renseigner si votre Photoprism requiert une authentification
+           password: "password"
+
+- Various:
+    - Caddy:
+        icon: caddy.png
+        ping: ip:port
+        href: 'ip:port''
+        description: Reverse Proxy
+
+- System:
+    - Portainer:
+        icon: portainer.png
+        ping: https://portainer.local/
+        href: https://portainer.local/
+        description: Container Management
+        container: portainer
+        showStats: True
+        widget:
+          type: portainer
+          url: https://portainer.local
+          env: 1
+          key: Admin_Key
+
+    - Glances:
+        icon: glances.png
+        href: "https://glances.local/"
+        description: "System Monitoring"
+        ping: https://glances.local/
+
+- Data:
+    - CPU:
+        widget:
+          type: glances
+          url: http://glances.local:7300
+          metric: cpu
+          version: 4
+    - Memory:
+        widget:
+          type: glances
+          url: http://glances.local:7300
+          metric: memory
+          version: 4
+    - Network:
+        widget:
+          type: glances
+          url: http://glances.local:7300
+          metric: network:eth0   # Remplace "eth0" par l'interface réseau souhaitée
+          version: 4
+    - CPU Sensor:
+        widget:
+          type: glances
+          url: http://glances.local:7300
+          metric: "sensor:Package id 0"   # Vérifie que le nom du capteur correspond à celui rapporté par Glances
+          version: 4
+
+- Calendar:
+    - Calendar:
+        widget:
+          type: calendar
+          firstDayInWeek: monday # optional - defaults to monday
+          view: monthly # optional - possible values monthly, agenda
+          maxEvents: 10 # optional - defaults to 10
+          showTime: true # optional - show time for event happening today - defaults to false

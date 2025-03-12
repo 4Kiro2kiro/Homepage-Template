@@ -1,0 +1,18 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/info-widgets/
+
+- search:
+    provider: duckduckgo
+    target: _blank
+
+- glances:
+    label: "Mon Serveur"
+    url: http://glances.local:7300
+    cpu: true
+    mem: true
+    cputemp: true
+    uptime: true
+    disk: "/"
+    diskUnits: bytes
+    expanded: true
