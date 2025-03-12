@@ -2,7 +2,7 @@
 
 **A customizable and self-hosted dashboard for organizing your services.**  
 
-![My_homepage.png](#)  
+![/images/My_homepage.png](#)  
 
 ## 🚀 Features  
 ✅ **Fully customizable** – Modify layout, themes, and widgets  
