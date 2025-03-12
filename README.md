@@ -68,7 +68,3 @@
 
 ## 📜 License  
 This project is open-source under the **MIT License**. Contributions are welcome! 🚀  
-
----
-
-Ajoute un **screenshot** du dashboard et mets à jour le lien GitHub pour un README encore plus complet ! 😊
